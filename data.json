@@ -1,0 +1,32 @@
+[
+  {
+    "emoji": "🧥",
+    "service": "Dry Cleaning",
+    "price": "200.00"
+  },
+  {
+    "emoji": "🧺",
+    "service": "Wash & Fold",
+    "price": "100.00"
+  },
+  {
+    "emoji": "🥌",
+    "service": "Ironing",
+    "price": "30.00"
+  },
+  {
+    "emoji": "💦",
+    "service": "Stain Removal",
+    "price": "500.00"
+  },
+  {
+    "emoji": "👞",
+    "service": "Leather & Suede Cleaning",
+    "price": "999.00"
+  },
+  {
+    "emoji": "👰",
+    "service": "Wedding Dress Cleaning",
+    "price": "2800.00"
+  }
+]

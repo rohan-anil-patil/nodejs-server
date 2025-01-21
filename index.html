@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task18</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "n_RVmQ9YOtH0F8tl9",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+        <div class="logo">
+          <p>LOGO</p>
+        </div>
+        <ul class="midnav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="username">
+          <p>Username</p>
+        </div>
+        <div class="hamburger">
+          <button id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu-list">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <article class="left">
+          <h1 id="head">
+            Revitalize Your <br />
+            Clothes with Expert <br /><span>Laundry Services!</span>
+          </h1>
+          <p>
+            From premium dry cleaning to swift wash and fold, we deliver care
+            and convenience. Schedule a pickup and rediscover the freshness of
+            your clothes today!
+          </p>
+          <button id="bookServiceButton">
+            <i class="fa-solid fa-shop"></i> Book a Service today!
+          </button>
+        </article>
+        <aside class="right">
+          <img src="./images/hero.png" alt="Washing" />
+        </aside>
+      </div>
+      <div class="achievement">
+        <div class="achievement-info">
+          <div class="achievement-title">
+            <h1>Our Achievements</h1>
+          </div>
+          <div class="achievement-numdata">
+            <div class="data-achievement">
+              <h1>15+</h1>
+              <p>Laundry Services</p>
+            </div>
+            <div class="data-achievement border">
+              <h1>240+</h1>
+              <p>Happy Customers</p>
+            </div>
+            <div class="data-achievement">
+              <h1>2+ Yrs</h1>
+              <p>Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="service-main">
+        <div class="service-left">
+          <div class="service-heading">
+            <h1>Our Services</h1>
+            <p>
+              Click On The Add To Cart Button To Add The Services To Your Cart
+            </p>
+          </div>
+          <div class="services-container"></div>
+          <div class="left-footer">
+            <p>
+              <i class="fa-solid fa-circle-info"></i>
+              <span> Add the items to the cart and book now</span>
+            </p>
+          </div>
+        </div>
+        <div class="service-right">
+          <div class="right-up">
+            <h3>Added Items</h3>
+            <div class="tableset">
+              <table>
+                <thead>
+                  <th class="col-sr">S.No</th>
+                  <th class="col-name">Service Name</th>
+                  <th class="col-price">Price</th>
+                </thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+            </div>
+            <div class="infostart">
+              <i class="fa-solid fa-circle-info"></i>
+              <p class="infostart-head">No items Added</p>
+              <p class="infostart-para">Add items from Service bar</p>
+            </div>
+            <div class="pricing">
+              <p>Total Amount</p>
+              <p id="totalprice"></p>
+            </div>
+          </div>
+          <div class="right-down">
+            <p>Book now</p>
+
+            <div class="name">
+              <label class="lebel1" for="name">Full name</label><br />
+              <input
+                class="input1"
+                type="text"
+                name="namebook"
+                id="namebook"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="contact">
+              <div class="info1">
+                <label class="lebel1" for="email">Email ID</label><br />
+                <input
+                  class="input1"
+                  type="email"
+                  name="emailbook"
+                  id="emailbook"
+                  placeholder="mailid@gmail.com"
+                />
+              </div>
+              <div class="info1">
+                <label class="lebel1" for="phone">Phone Number</label><br />
+                <input
+                  class="input1"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="0000000000"
+                />
+              </div>
+            </div>
+            <button id="btn3">Book Now</button>
+
+            <p class="alertparared"></p>
+            <p class="alertparagreen"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="highlights">
+        <div class="hl-info">
+          <img class="h1-img" src="./images/pngegg.png" alt="" />
+          <h3>Premium Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            aperiam.
+          </p>
+        </div>
+        <div class="hl-info">
+          <img class="h1-img" class="h1-img" src="./images/pngegg.png" alt="" />
+          <h3>Quick Support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            aperiam.
+          </p>
+        </div>
+        <div class="hl-info">
+          <img class="h1-img" src="./images/pngegg.png" alt="" />
+          <h3>Hassle Free Delivery</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            aperiam.
+          </p>
+        </div>
+        <div class="hl-info">
+          <img class="h1-img" src="./images/pngegg.png" alt="" />
+          <h3>Affordable Prices</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            aperiam.
+          </p>
+        </div>
+      </div>
+      <div class="contactus">
+        <div class="contactus-container">
+          <div class="contactus-title">
+            <h1>Subscribe to our newsletter</h1>
+          </div>
+          <div class="contactus-input">
+            <input type="text" name="name" id="name" placeholder="Full Name" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            /><br />
+            <button id="btn4">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="list1">
+            <h2>Logo</h2>
+            <div class="list1-container">
+              <h3>About us</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <ul class="list2">
+            <h3>Important Links</h3>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Privacy policy</li>
+            <li>Terms of use</li>
+            <li>Refund policy</li>
+          </ul>
+          <ul class="list2">
+            <h3>Important Links</h3>
+            <li>mail@site.com</li>
+            <li>+91-1234567890</li>
+          </ul>
+          <div class="list2">
+            <h3>Important Links</h3>
+            <div class="social">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
